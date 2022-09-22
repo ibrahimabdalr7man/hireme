@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+
+
+    <title>Hireme | jobs</title>
+
+    <link href="@Url.Content("~/Content/main.d8e0d294.css")" rel="stylesheet">
+
+
+    <meta charset="utf-8">
+    <title>Hireme jobs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--
+
+    Template 2075 Digital Team
+
+    http://www.tooplate.com/view/2075-digital-team
+
+    -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/font-awesome.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/animate.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/et-line-font.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/nivo-lightbox.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/nivo_themes/default/default.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="">
+
+    <!-- Add your content of header -->
+
+    <main class="content-wrapper">
+        <header class="white-text-container section-container">
+            <div class="text-center">
+                <h1>Browse for jobs</h1>
+
+
+
+            </div>
+            <!-- Search form -->
+           
+        </header>
+
+
+
+        <!-- Add your site or app content here -->
+        @foreach (var p in Model)
+        {
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div class="card">
+                        <div class="card-block">
+                            <h2>@p.job</h2>
+                            <div class="row">
+
+                                <div class="col-md-8">
+
+                                    <p>@p.name</p>
+                                    <p>@p.phoneNumber</p>
+                                    <p>@p.email</p>
+                                    <p>@p.address</p>
+                                    <p>@p.details</p>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+
+
+
+
+        <script>document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });</script>
+
+
+</html>
